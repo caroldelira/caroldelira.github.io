@@ -29,7 +29,7 @@ ul {
 #lista ul li {
   margin-top: 7px;
   padding-bottom: 3px;
-  border-bottom: 1px solid #266fc5;
+  border-bottom: 1px solid #001f4e;
 }
 
 a {
@@ -52,6 +52,9 @@ header {
   /*border-bottom: 1px solid #000;*/
   box-shadow: 1px 1px 10px 1px rgb(105, 105, 105);
   /* border-bottom: 15px ridge #fff;*/
+  margin-bottom: 35px;
+  padding: 10px;
+  text-align: center;
 }
 
 header ul {
@@ -118,7 +121,7 @@ main {
 }
 
 .form {
-  width: 40%;
+  width: 80%;
   margin: 0 auto;
   margin-top: 10px;
 }
@@ -126,7 +129,7 @@ main {
 .form button {
   width: 15%;
   text-align: center;
-  margin: 10px;
+  margin: 30px;
 }
 
 #botao1 {
@@ -139,10 +142,93 @@ main {
   border-radius: 10px;
   font-weight: bold;
   cursor: pointer;
+  display: inline-block;
 }
 
 #botao1:hover {
   background-color: #001f4e;
   color: #fff;
   transition: 500ms;
+}
+
+@media only screen and(max-width:768px) {
+  .form {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container .name h1 {
+    font-size: 20px;
+  }
+
+  .container .name h5 {
+    font-size: 10px;
+  }
+
+  #about p {
+    max-width: 80%;
+    font-size: 10px;
+  }
+
+  #botao1 {
+    width: 200px;
+    height: 30px;
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid #001f4e;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 10px;
+  }
+
+  #lista ul li {
+    margin-top: 7px;
+    margin-bottom: 10px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #001f4e;
+    font-size: 10px;
+  }
+
+  #lista {
+    margin: auto;
+    max-width: 200px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    font-size: 10px;
+  }
+
+  #lista ul {
+    list-style-type: none;
+    font-weight: lighter;
+    font-size: 10px;
+  }
+
+  #arrow {
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border-bottom: 1px solid #000;*/
+    box-shadow: 1px 1px 10px 1px rgb(105, 105, 105);
+    /* border-bottom: 15px ridge #fff;*/
+    margin-bottom: 20px;
+    padding: 5px;
+    text-align: center;
+  }
+
+  header ul {
+    display: flex;
+    font-size: 12px;
+  }
+
+  header ul li {
+    padding: 10px;
+  }
 }
