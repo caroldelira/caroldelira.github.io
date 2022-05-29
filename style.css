@@ -341,6 +341,7 @@ ul {
   border-radius: 5px;
   margin: 10px;
   transition: 500ms;
+  width: 200px;
 }
 
 #button1:hover {
